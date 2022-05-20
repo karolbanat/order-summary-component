@@ -1,0 +1,20 @@
+body {
+	font-family: var(--ff-primary);
+	font-weight: 500;
+	background-image: url('../../../dist/images/pattern-background-mobile.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: var(--bg-body);
+
+	@media (min-width: $medium-bp) {
+		background-image: url('../../../dist/images/pattern-background-desktop.svg');
+	}
+}
+
+main {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	padding: 4.5em 1.5em;
+}

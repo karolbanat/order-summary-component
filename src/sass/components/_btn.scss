@@ -1,0 +1,30 @@
+.btn {
+	font-size: 1.5rem;
+	font-weight: 900;
+	text-align: center;
+	text-decoration: none;
+
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+
+	&--primary {
+		padding: 1.6rem;
+		color: var(--payment-btn);
+		background-color: var(--bg-payment-btn);
+		box-shadow: var(--shadow);
+
+		&:hover {
+			background-color: var(--bg-payment-btn-hover);
+		}
+	}
+
+	&--link {
+		padding: 0.5rem;
+		color: var(--cancel-btn);
+
+		&:hover {
+			color: var(--cancel-btn-hover);
+		}
+	}
+}

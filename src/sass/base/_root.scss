@@ -1,0 +1,36 @@
+:root {
+	// colors
+	--clr-primary-400: hsl(225, 100%, 94%);
+	--clr-primary-700: hsl(245, 75%, 52%);
+
+	--clr-neutral-300: hsl(225, 100%, 98%);
+	--clr-neutral-400: hsl(224, 23%, 55%);
+	--clr-neutral-700: hsl(223, 47%, 23%);
+
+	--clr-white: hsl(0, 0%, 100%);
+
+	// font families
+	--ff-primary: 'Red Hat Display', sans-serif;
+
+	// stage
+	--bg-body: var(--clr-primary-400);
+
+	--card-heading: var(--clr-neutral-700);
+	--card-text: var(--clr-neutral-400);
+	--bg-card: var(--clr-white);
+
+	--bg-plan-summary: var(--clr-neutral-300);
+	--bg-icon-box: var(--clr-neutral-400);
+	--plan-summary-heading: var(--clr-neutral-700);
+	--plan-summary-link: var(--clr-primary-700);
+	--plan-summary-link-hover: hsl(245, 75%, 70%);
+
+	--payment-btn: var(--clr-white);
+	--bg-payment-btn: var(--clr-primary-700);
+	--bg-payment-btn-hover: hsl(245, 75%, 70%);
+
+	--cancel-btn: var(--clr-neutral-400);
+	--cancel-btn-hover: var(--clr-neutral-700);
+
+	--shadow: 0 1em 2em hsla(245, 75%, 52%, 0.2);
+}

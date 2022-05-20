@@ -2,29 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./dist/css/main.min.css">
 
-  <title>Frontend Mentor | Order summary card</title>
+	<title>Frontend Mentor | Order summary card</title>
 </head>
 
 <body>
 
-  <!-- Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order -->
+	<main>
+		<div class="card">
+			<img src="./dist/images/illustration-hero.svg" alt="Illustration of person wearing headphones and dancing."
+				class="card__top-image">
+			<div class="card__body">
+				<h1 class="card__heading">Order Summary</h1>
+				<p class="card__text">You can now listen to millions of songs, audiobooks, and podcasts on any
+					device anywhere you like!</p>
+				<div class="plan-summary">
+					<img src="./dist/images/icon-music.svg" alt="" class="plan-summary-icon">
+					<div class="plan-summary__plan">
+						<p class="plan-summary__plan-name">Annual Plan</p>
+						<p class="plan-summary__pricing">$59.99/year</p>
+					</div>
+					<a href="#" class="plan-summary__change-link">Change</a>
+				</div>
+				<a href="#" class="btn btn--primary">Proceed to Payment</a>
+				<a href="#" class="btn btn--link">Cancel Order</a>
+			</div>
+		</div>
+	</main>
 
 </body>
 

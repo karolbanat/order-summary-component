@@ -1,0 +1,44 @@
+.plan-summary {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+
+	padding: clamp(1.5rem, 4vw, 2.6rem);
+
+	font-size: 1.4rem;
+
+	background-color: var(--bg-plan-summary);
+	border-radius: 0.75em;
+
+	&__plan {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (min-width: $medium-bp) {
+			font-size: 1.6rem;
+		}
+	}
+
+	&__plan-name {
+		margin-bottom: 0.4rem;
+		font-weight: 900;
+		color: var(--plan-summary-heading);
+
+		@media (min-width: $medium-bp) {
+			margin-bottom: 0.8rem;
+		}
+	}
+
+	&__change-link {
+		margin-left: auto;
+		font-weight: 700;
+		color: var(--plan-summary-link);
+		transition: color 0.35s ease;
+
+		&:hover {
+			color: var(--plan-summary-link-hover);
+			text-decoration: none;
+		}
+	}
+}

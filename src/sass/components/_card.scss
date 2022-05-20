@@ -1,0 +1,33 @@
+.card {
+	max-width: 28em;
+	color: var(--card-text);
+	border-radius: 1em;
+	box-shadow: 0 1em 2em hsla(245, 75%, 52%, 0.2);
+	overflow: hidden;
+
+	&__body {
+		display: grid;
+		gap: 1.5em;
+		padding: clamp(2.25em, 6vw, 3.5em) clamp(1.5em, 5vw, 3em);
+		background-color: var(--bg-card);
+	}
+
+	&__heading {
+		font-size: clamp(2rem, 5vw, 2.8rem);
+		color: var(--card-heading);
+		font-weight: 900;
+		text-align: center;
+	}
+
+	&__text {
+		margin-inline: auto;
+		max-width: 90%;
+		font-size: 1.5rem;
+		text-align: center;
+		line-height: 1.4;
+
+		@media (min-width: $medium-bp) {
+			font-size: 1.6rem;
+		}
+	}
+}
