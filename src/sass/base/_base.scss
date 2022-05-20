@@ -1,14 +1,14 @@
 body {
 	font-family: var(--ff-primary);
 	font-weight: 500;
-	background-image: url('../../../dist/images/pattern-background-mobile.svg');
+	background-image: url('../../dist/images/pattern-background-mobile.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: 50% -20%;
 	background-color: var(--bg-body);
 
 	@media (min-width: $medium-bp) {
-		background-image: url('../../../dist/images/pattern-background-desktop.svg');
+		background-image: url('../../dist/images/pattern-background-desktop.svg');
 	}
 }
 
